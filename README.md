@@ -5,8 +5,8 @@
 3. PHP version (include function and associative array to manipulate swiper content)
 4. The html branch contains the html version (without Php)
 
-## 🔗 Visit
-[Go to the page](https://rococo-dragon-729d7f.netlify.app/)
+## Visit
+[🔗Go to the page](https://rococo-dragon-729d7f.netlify.app/)
 
 ## Sass start
 type in the root directory:
