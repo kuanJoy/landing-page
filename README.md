@@ -5,14 +5,6 @@
 3. PHP version (include function and associative array to manipulate swiper content)
 4. The html branch contains the html version
 
-## Features 
-
-* hamburger
-
-* swiper
-
-* toggle filtering
-
 ## Sass start
 type in the root directory:
 ```bash
