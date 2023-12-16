@@ -4,6 +4,7 @@
 ● Full responsive, SASS
 ● Hamburger, swiper, toggle-filtering
 ● PHP version (include function and associative array to manipulate swiper content)
+● The html branch contains the html version
 ```
 ## Features 
 
