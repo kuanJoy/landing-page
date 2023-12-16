@@ -1,4 +1,4 @@
-## Simple landing page
+## Proxylab landing page
 
 1. Full responsive, SASS
 2. Hamburger, swiper, toggle-filtering
