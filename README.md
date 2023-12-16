@@ -3,7 +3,7 @@
 ```bash
 ● Full responsive, SASS
 ● Hamburger, swiper, toggle-filtering
-● PHP version (include and associative array for swiper)
+● PHP version (include and associative array to manipulate swiper content)
 ```
 ## Features 
 
