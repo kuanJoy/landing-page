@@ -6,7 +6,7 @@
 4. The html branch contains the html version (without Php)
 
 ## 🔗 Visit
-[Go to the page]([https://github.com/jonsuh/hamburgers](https://rococo-dragon-729d7f.netlify.app/))
+[Go to the page](https://rococo-dragon-729d7f.netlify.app/)
 
 ## Sass start
 type in the root directory:
