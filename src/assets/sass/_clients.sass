@@ -1,0 +1,54 @@
+.clients
+    margin-top: 6.25rem
+    display: flex
+    flex-direction: column
+    align-items: center
+.clients__title
+    color: $grey
+    font-family: Mulish
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 3.125rem
+.clients__gal
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 7rem
+.gal__row
+    display: flex
+    gap: 7rem
+    align-items: center
+    justify-content: center
+
+    .gal_item
+        max-height: 50px
+    .slack
+        max-width: 157px
+    .descript
+        max-width: 198px
+    .etsy
+        max-width: 98px
+    .spotify
+        max-width: 155px
+    .logitech
+        max-width: 153px
+
+@media screen and (max-width: 78.75rem)
+    .clients__gal
+        flex-direction: column
+        gap: 2rem
+
+@media screen and (max-width: 45.1875rem)
+    .clients__gal
+        flex-direction: column
+        gap: 2rem
+        width: 97%
+    .gal__row
+        gap: 3rem
+        flex-wrap: wrap
+@media screen and (max-width: 606)
+    .clients__gal
+        flex-direction: column
+        gap: 2rem
+    .gal__row
+        gap: 3rem

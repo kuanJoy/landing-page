@@ -1,0 +1,52 @@
+.project
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    border-radius: 15px
+    background: linear-gradient(106deg, rgba(255, 255, 255, 0.32) 0.7%, rgba(255, 255, 255, 0.60) 99.07%)
+    box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.03)
+    background: $white
+    max-sheight: 284px
+    &-img
+        position: relative
+        bottom: 0
+        max-width: 440px
+        max-height: 440px
+    &__info
+        padding: 47px 37px 0px 37px
+        width: 46%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        gap: 2rem
+    &__title
+        color: $grey
+        font-family: Mulish
+        font-size: clamp(24px, 1.2348rem + 1.1585vw, 43px)
+        font-weight: 700
+        line-height: 50px
+    &__btn
+        font-size: clamp(8px, 0.561rem + 0.3659vw, 16px)
+
+@media screen and (max-width: 43.375rem)
+    .project
+        flex-direction: column-reverse
+        &__info
+            align-items: center
+            width: 100%
+            text-align: center
+            word-wrap: break-word
+
+@media screen and (max-width: 664px)
+    .project
+        align-items: center
+        &__info
+            padding-top: 10px
+            gap: 1rem
+        &__title
+            font-size: 15px
+            line-height: 30px
+        &-img
+            max-width: 260px
+            max-height: 260px

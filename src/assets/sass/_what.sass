@@ -1,0 +1,128 @@
+.what
+    margin-top: 7.5rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 5rem
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        gap: 1.8rem
+        width: 42%
+        margin-left: 0.5rem
+    &__title
+        color: $light-orange
+        font-family: Mulish
+        font-size: 24px
+        font-weight: 600
+        text-transform: uppercase
+    &__info
+        color: $grey
+        font-family: Mulish
+        font-size: 42px
+        font-style: normal
+        font-weight: 700
+        line-height: 50px
+    &__desc
+        color: $what-grey
+        font-family: Mulish
+        font-size: clamp(0.5rem, 0.3793rem + 0.6897vw, 1rem)
+        font-weight: 600
+        line-height: 26px
+        text-align: justify
+    &__btn
+        padding: 11px 24px
+        font-size: clamp(8px, 0.3491rem + 0.8621vw, 18px)
+        line-height: 1.75rem
+    &__gal
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-column-gap: 32px
+        grid-row-gap: 32px
+        width: 60%
+    &__card
+        border-radius: 15px
+        background: $white
+        box-shadow: 0px 6px 12px 0px rgba(44, 22, 84, 0.04)
+        border-bottom: .5625rem solid $white
+        transition: 0.2s all
+    &__card-content
+        padding: 29px 24px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 1rem
+    &__card-img
+        width: 4.4375rem
+    &__card-title
+        color: $what-card-title
+        font-family: Mulish
+        font-size: clamp(0.75rem, 0.6293rem + 0.6897vw, 1.25rem)
+        font-weight: 700
+        line-height: 28px
+    &__card-desc
+        color: $light-grey
+        font-size: clamp(0.5rem, 0.4246rem + 0.431vw, 0.8125rem)
+        font-weight: 400
+        line-height: 26px
+        width: 65%
+        text-align: center
+    &__card-more
+        color: $grey
+        font-size: 12px
+        font-weight: 500
+        line-height: 26px
+        text-decoration-line: underline
+
+.what__card
+    &:hover
+        border-bottom: .5625rem solid $light-orange
+
+@media screen and ( max-width: 1150px )
+    .what
+        flex-direction: column
+    .what__content
+        width: 65%
+        gap: 1rem
+    .what__info
+        font-size: 30px
+    .what__gal
+        width: 95%
+
+@media screen and (max-width: 596px)
+    .what__gal
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(4, 1fr)
+        grid-column-gap: 0px
+        grid-row-gap: 0px
+        gap: 1rem
+    .what__card
+        width: 80%
+        margin: 0 auto
+        text-align: center
+    .what__card-desc
+        width: 80%
+    .what__card-content
+        padding: 0px
+        gap: 0.5rem
+    .what__content
+        align-items: center
+    .what__info
+        font-size: 20px
+        text-align: center
+        line-height: 30px
+    .what__card-img
+        width: 2.3rem
+
+@media screen and (max-width: 400px)
+    .wnat__card
+        width: 90%
+    .what__card-img
+        height: 3.3rem
+    .what__card-desc
+        width: 100%

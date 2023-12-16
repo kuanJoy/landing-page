@@ -1,0 +1,169 @@
+
+.footer
+    display: flex
+    margin-top: 6.25rem
+    margin-bottom: 4rem
+    justify-content: space-between
+    &__logo-contacts
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+    &__logo
+        color: $grey
+        font-family: Rubik
+        font-size: clamp(1rem, 0.819rem + 1.0345vw, 1.75rem)
+        font-style: normal
+        font-weight: 500
+        line-height: 40px
+        letter-spacing: 0.5px
+        display: flex
+        text-align: center
+        cursor: pointer
+        margin-bottom: 10px
+        transition: 0.6s all
+        &:hover
+            transform: scale(1.09)
+    &__nav
+        display: flex
+        justify-content: space-between
+        gap: 5rem
+    &__links
+        display: flex
+        flex-direction: column
+        gap: 1rem
+    &__title
+        color: $grey
+        font-family: Mulish
+        font-size: clamp(8px, 0.4146rem + 0.4878vw, 16px)
+        font-weight: 700
+        line-height: 22px
+    &__item
+        color: $grey-footer
+        font-family: Mulish
+        font-size: clamp(8px, 0.4146rem + 0.4878vw, 16px)
+        font-weight: 600
+        transition: 0.3s all
+        &:hover
+            color: #9d9d9d
+    &__join
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 40px
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 8px
+    &__email
+        border-radius: 8px
+        border: 1px solid rgba(178, 178, 178, 0.21)
+        background: $white
+        padding: 12px
+        font-size: 1rem
+        color: $grey
+        font-family: Mulish
+        width: 100%
+        &::placeholder
+            color: #999
+            font-family: Mulish
+            font-size: clamp(8px, 0.4146rem + 0.4878vw, 16px)
+            font-style: normal
+            font-weight: 400
+            line-height: 150%
+    &__btn
+        margin-top: 25px
+        border-radius: 8px
+        background: $light-orange
+        color: $white
+        padding: 16px 48px
+        font-family: Mulish
+        font-size: clamp(8px, 0.4146rem + 0.4878vw, 14px)
+        font-weight: 700
+        line-height: 150%
+        &:before
+            border-radius: 8px
+
+.contacts__item
+    color: $dark-grey
+    font-size: clamp(8px, 0.4146rem + 0.4878vw, 16px)
+
+    line-height: 32px
+    display: flex
+    align-items: center
+    gap: 0.4rem
+    &:hover
+        color: $light-grey
+
+.location
+    max-height: 24px
+    max-width: 24px
+.phone
+    max-height: 24px
+    max-width: 24px
+.message
+    max-height: 24px
+    max-width: 25px
+
+.line
+    height: 1px
+    opacity: 0.2
+    background: $grey
+    margin: 42px 0px
+
+.footer__rights
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 2.5rem
+    padding: 0px 20px
+
+.rights__nav
+    display: flex
+    gap: 3rem
+.rights__item
+    color: $grey-rights
+    font-family: Rubik
+    font-size: clamp(8px, 0.4146rem + 0.4878vw, 14px)
+    line-height: 14px
+
+@media screen and (max-width: 1050px)
+    .footer
+        padding: 10px
+        margin-top: 4rem
+        flex-direction: column
+    .footer__logo-contacts
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+        gap: 0.5rem
+    .footer__nav
+        margin: 2rem 0rem
+        justify-content: space-around
+    .footer__join
+        flex-direction: row
+        justify-content: space-around
+    .footer__form
+        flex-direction: row
+        align-items: center
+        justify-content: center
+    .footer__btn
+        margin-top: 0
+    .footer__rights
+        margin-bottom: 3rem
+
+@media screen and (max-width: 484px)
+    .footer__join
+        flex-wrap: wrap
+    .footer__nav
+        gap: 2rem
+    .footer__rights
+        flex-direction: column
+        gap: 1.3rem
+    .footer__email
+        font-size: 10px
+        &::placeholder
+            font-size: 5px
+    .footer__btn
+        padding: 8px 24px
