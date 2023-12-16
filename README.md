@@ -3,7 +3,7 @@
 1. Full responsive, SASS
 2. Hamburger, swiper, toggle-filtering
 3. PHP version (include function and associative array to manipulate swiper content)
-4. The html branch contains the html version
+4. The html branch contains the html version (without Php)
 
 ## Sass start
 type in the root directory:
