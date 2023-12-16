@@ -1,0 +1,211 @@
+.container-gal
+    max-width: 75rem
+    margin: 0 auto
+.work
+    margin-top: 6.25rem
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        margin-left: 0.5rem
+    &__title
+        color: #FD695A
+        font-family: Mulish
+        font-size: clamp(1rem, 0.8793rem + 0.6897vw, 1.5rem)
+        font-style: normal
+        font-weight: 600
+        line-height: 50px
+        text-transform: uppercase
+        width: 80%
+    &__desc
+        color: $grey
+        font-family: Mulish
+        font-size: clamp(1rem, 0.6078rem + 2.2414vw, 2.625rem)
+        font-weight: 700
+        line-height: 50px
+        width: 80%
+    &__nav
+        flex-wrap: wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 2rem
+        width: 80%
+    &__link
+        position: relative
+        color: #ccc
+        font-family: Mulish
+        font-size: clamp(0.625rem, 0.5345rem + 0.5172vw, 1rem)
+        font-weight: 700
+        line-height: 22px
+    &__action
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+        color: $grey
+        font-family: Mulish
+        font-size: clamp(0.625rem, 0.5345rem + 0.5172vw, 1rem)
+        font-weight: 600
+        line-height: 22px
+        margin-left: 2rem
+        &:hover
+            color: $light-grey
+
+.work__link::before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -5px
+    height: 2px
+    width: 0
+    background: $light-orange
+    transition: 0.6s all
+    border-radius: 20px
+.work__link:hover::before
+    width: 100%
+.work__link:hover
+    color: $light-orange
+
+.arrow-right
+    width: 20px
+    height: 23px
+    gap: 0.8rem
+    &:hover
+        fill: $light-grey
+
+.work__gal
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    gap: 1rem
+
+@media  screen and (max-width: 56.25rem)
+    .work__title, .work__desc, .work__nav, .reviews__title, .reviews__info
+        margin: 0 auto
+        line-height: 2rem
+
+@media screen and (max-width: 37.5rem )
+    .work
+        margin-top: 4rem
+        &__content
+            gap: 0.6rem
+
+//--------------------- mix it up --------------------
+
+.controls
+    flex-wrap: wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+
+.control
+    cursor: pointer
+    color: white
+    transition: background 150ms
+    position: relative
+    color: #ccc
+    font-family: Mulish
+    font-size: clamp(0.625rem, 0.5345rem + 0.5172vw, 1rem)
+    font-weight: 700
+    line-height: 22px
+    &::before
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        bottom: -5px
+        height: 2px
+        width: 0
+        background: $light-orange
+        transition: 0.6s all
+        border-radius: 20px
+    &:hover::before
+        width: 100%
+    &:hover
+        color: $light-orange
+
+.control[data-filter]:after,
+.control[data-toggle]:after
+    content: ''
+    transition: background-color 150ms, border-color 150ms
+    color: $light-orange
+
+.control:first-of-type
+    border-radius: 3px 0 0 3px
+
+.control:last-of-type
+    border-radius: 0 3px 3px 0
+
+.control[data-filter=".UI"]
+    color: $light-orange
+
+.control[data-filter=".Development"]
+    color: $light-orange
+
+.control[data-filter=".Graphic"]
+    color: $light-orange
+
+.control[data-filter=".Motion"]
+    color: $light-orange
+
+.control[data-filter=".Branding"]
+    color: $light-orange
+
+.control[data-filter=".Business"]
+    color: $light-orange
+
+.mixitup-control-active
+    color: $light-orange
+
+    &[data-toggle]:after
+        color: $light-orange
+
+.mixitup-control-active::after
+    color: $light-orange
+
+/* Container
+
+.container
+    overflow: hidden
+    font-size: 0.1px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    &:after
+        content: ''
+        display: inline-block
+        width: 100%
+
+/* Target Elements
+
+/* Grid Breakpoints
+
+/* 2 Columns */
+
+.work__img
+    max-width: 361.154px
+    max-height: 340.942px
+
+@media screen and (max-width: 541px)
+    // .mix
+    //     padding: 0px 10px
+    //     width: calc(100%/3 - (((3 - 1) * 1rem) / 3))
+    .work__content
+        align-items: center
+    .work__img
+        max-width: 279px
+        max-height: 250px
+
+@media screen and (max-width: 961px)
+    .controls
+        margin: 0 auto
+        padding: 0px 30px
+    // .mix
+    //     width: calc(100%/4 - (((4 - 1) * 1rem) / 4))

@@ -1,0 +1,129 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 2.8125rem
+
+.logo
+    color: $grey
+    font-family: Rubik
+    font-size: 32px
+    font-style: normal
+    font-weight: 500
+    line-height: 40px
+    letter-spacing: 0.5px
+    display: flex
+    text-align: center
+    cursor: pointer
+
+.nav-collapse
+    display: flex
+    align-items: center
+    z-index: 1
+    justify-content: space-between
+    width: 65%
+    z-index: 9999
+
+.nav
+    text-align: center
+    font-family: Manrope
+    gap: 2rem
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.nav__link
+    color: $nav__link
+    font-size: 16px
+    font-weight: 600
+    line-height: 28px
+    transition: 0.4s all
+    position: relative
+.nav__link::before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -5px
+    height: 2px
+    width: 0
+    background: $light-orange
+    transition: 0.6s all
+    border-radius: 20px
+.nav__link:hover::before
+    width: 100%
+.nav__link:hover
+    color: $light-orange
+
+.btn
+    border-radius: 50px
+    background: $light-orange
+    font-family: Mulish
+    color: $white
+    text-align: center
+    font-weight: 600
+    font-size: clamp(0.625rem, 0.561rem + 0.3659vw, 1rem)
+    padding: 11px 27px
+    transition: 0.6s all
+    text-align: center
+    position: relative
+    transition: 0.3s ease all
+    z-index: 1
+    border-radius: 3.125rem
+    // border: 1px solid $light-orange
+.btn:before
+    transition: 0.5s all ease
+    position: absolute
+    top: 0
+    left: 50%
+    right: 50%
+    bottom: 0
+    opacity: 0
+    content: ''
+    background-color: $lighter-orange
+    z-index: -1
+    border-radius: 50px
+.btn:hover::before
+    left: 0
+    right: 0
+    opacity: 1
+.btn:active
+    transform: scale(0.93)
+
+.hamburger--slider
+    display: none
+
+@media screen and (max-width: 1201px)
+    .header
+        padding: 0px 10px
+    .hamburger--slider
+        display: block
+
+    .nav-collapse
+        position: absolute
+        top: 4.375rem
+        left: -100%
+        width: 100%
+        flex-direction: column
+        padding: 2.5rem
+        transition: 0.6s all
+        justify-content: center
+        gap: 1rem
+
+    .btn
+        margin-left: 0
+
+    .is-active
+        left: 0
+
+    .banner__content
+        margin-top: 4rem
+
+@media screen and (max-width: 24.0625rem)
+
+    .nav
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-column-gap: 10px
+        grid-row-gap: 10px
