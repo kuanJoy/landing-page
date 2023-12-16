@@ -1,9 +1,9 @@
 ## Simple landing page
 
-● Full responsive, SASS
-● Hamburger, swiper, toggle-filtering
-● PHP version (include function and associative array to manipulate swiper content)
-● The html branch contains the html version
+1. Full responsive, SASS
+2. Hamburger, swiper, toggle-filtering
+3. PHP version (include function and associative array to manipulate swiper content)
+4. The html branch contains the html version
 
 ## Features 
 
