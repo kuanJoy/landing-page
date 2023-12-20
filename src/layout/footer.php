@@ -12,18 +12,20 @@
                   </svg>
                   Dhaka, Bangladesh
               </a>
-              <a href="" class="contacts__item">
-                  <svg class="phone">
-                      <use href="./src/assets/img/icon/svg-sprite.svg#phone" />
-                  </svg>
-                  0943833399
+              <a href="tel:0943833399" class="contacts__item" target="_blank">
+                <svg class="phone">
+                    <use href="./src/assets/img/icon/svg-sprite.svg#phone" />
+                </svg>0943833399
               </a>
-              <a href="" class="contacts__item">
-                  <svg class="message">
-                      <use href="./src/assets/img/icon/svg-sprite.svg#message" />
-                  </svg>
-                  support@proxylab.com
-              </a>
+              <a
+                href="mailto:support@proxylab.com"
+                class="contacts__item"
+                target="_blank"
+            >
+            <svg class="message">
+              <use href="./src/assets/img/icon/svg-sprite.svg#message" />
+            </svg>support@proxylab.com
+          </a>
           </div>
           <div class="footer__nav">
               <div class="footer__links">
