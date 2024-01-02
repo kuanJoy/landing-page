@@ -2,7 +2,7 @@
 
 1. Full responsive, SASS
 2. Hamburger, swiper, toggle-filtering
-3. PHP version (The include function for further multiple pages and an associative array to manipulate Swiper content)
+3. PHP version (include & layout folders for further multiple pages and an associative array to manipulate Swiper content)
 4. The HTML branch contains its corresponding version (without PHP)
 
 ## [🔗Go to the page](https://rococo-dragon-729d7f.netlify.app/)
