@@ -64,7 +64,7 @@
       </footer>
       <hr class="line" />
       <div class="footer__rights container-main">
-          <a href="#" class="rights__item">© 2021 proxylab - All rights reserved.</a>
+          <a href="#" class="rights__item">© 2024 proxylab - All rights reserved.</a>
           <div class="rights__nav">
               <a href="" class="rights__item">Privacy</a>
               <a href="" class="rights__item">Security</a>
